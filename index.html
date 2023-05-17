@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"  >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel= "stylesheet " href="css/my-css.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+    <title>The Haukai Restaurant homepage</title>     
+  </head>
+  <body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <header class="w3-container w3-theme-d5">
+      <h1>The Haukai Restaurant</h1>
+    </header>
+    <nav class="w3-bar w3-theme-d5 w3-padding-16 ">
+      <a href="/index.html" class="w3-bar-item w3-button w3-light-grey w3-hover-light-green w3-round-large w3-hide-small" >Home </a>
+      <a href="/menus.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Menus</a>
+      <a href="/booking.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Bookings</a>
+      <a href="/giftvoucher.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Gift Vouchers</a>
+      <a href="/aboutus.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >About Us</a>
+      <a href="/contact.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Contact</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <nav id="demo" class="w3-bar-block w3-theme-d5 w3-hide w3-hide-large w3-hide-medium ">
+      <a href="/index.html" class="w3-bar-item w3-button w3-light-grey w3-hover-light-green w3-padding-16">Home</a>   
+      <a href="/menus.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Menus</a>
+      <a href="/booking.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Bookings</a>
+      <a href="/giftvoucher.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Gift Vouchers</a>
+      <a href="/aboutus.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">About Us</a>
+      <a href="/contact.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Contact</a>
+    </nav>
+    <script>
+  function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+    <!-- Here is our page's main content -->
+    <main>
+    <!--Slogan-->
+    <div class="w3-row">
+        <div class="w3-display-container w3-theme-d5 " >
+          <img src="images/silverfern.jpg" alt="Authentic Māori Kai in the Bay of Islands" class="w3-image w3-opacity-min">                
+        </div>
+      <!--Menu bars-->
+        <div class="w3-half w3-theme-d5" >
+        <a href="/menus.html#m1"><img src="images/appetizers.jpg" alt="Appetizers" class="w3-image" style="width:100%"></a>           
+        </div>
+        <div class="w3-half w3-theme-d5">
+        <a href="/menus.html#m2">  <img src="images/main.jpg" alt="Main" class="w3-image" style="width:100%" ></a>
+        </div>
+        <div class="w3-half w3-theme-d5">
+        <a href="/menus.html#m3">  <img src="images/dessert.jpg" alt="Dessert" class="w3-image" style="width:100%" ></a>
+        </div>       
+        <div class="w3-half w3-theme-d5">
+        <a href="/menus.html#m4">  <img src="images/beverages.jpg" alt="Beverages" class="w3-image" style="width:100%" ></a>
+        </div>
+      
+      <div class="col-container">
+       <div class=" w3-container w3-padding w3-theme-d3 col" >
+          <h2>Opening Hours</h2>
+          <p>Monday - Saturday: 
+           11:00AM - 10:00PM<br>  
+           Sunday:<br> 
+           9:00AM - 10:00PM</p>  
+          <br>
+          <a class="w3-button w3-block w3-theme-d5 w3-hover-light-green w3-round-large"  href="https://calendar.google.com/calendar/embed?src=019111f5951466799a808f89294c9b4c37edd2c6a84b6b12d7ff0862039db114%40group.calendar.google.com&ctz=Pacific%2FAuckland"> Check our opening hours</a>                   
+        </div>
+        <div class=" w3-container w3-padding w3-theme-d1 col">
+          <h2>Bookings</h2>
+          <p>We are a walk-in restaurant for dinner service and only accept bookings for groups of 8 or more.</p>
+          <p>Please contact us for group bookings of 8 or more, lunch or dinner.</p> 
+          <a class="w3-button w3-block w3-theme-d5 w3-hover-light-green w3-round-large" href="/booking.html">Book a table</a>
+          <p></p>
+          </div>
+       </div>
+       <div class="col-container">
+        <div class="w3-container w3-padding w3-theme col">
+          <h2>Location</h2>
+          <p>1 Island Street <br>
+            Kerikeri, Bay of Islands</p>
+          <h2>Contact</h2>
+          <p>09 401 4019</p>
+          <img src="images/icons-facebook.png" alt="icon facebook" class="w3-image"  >
+          <img src="images/icons-twitter.png" alt="icon twitter" class="w3-image"  >
+          <img src="images/icons-whatsapp.png" alt="icon whatsapp" class="w3-image"  >
+        </div>       
+        <div class="w3-container w3-padding w3-theme-l1 col">
+          <div class="map-responsive"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d104275.17748743217!2d173.91467957821465!3d-35.24134367542683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s1%20island%20street%20kerikeri%20bay%20of%20islands!5e0!3m2!1sen!2snz!4v1684059843520!5m2!1sen!2snz" width="600" height="450" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        </div>
+       
+      </div>
+    </main>
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer class="w3-container w3-theme-d5">
+      <p>&copy; Copyright 2023 by The Haukai Restaurant.</p>
+    </footer>
+  </body>
+</html>
