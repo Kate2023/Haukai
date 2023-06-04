@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset= "utf-8 ">
-    <title>Private page</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel= "stylesheet " href="css/my-css.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-green.css">
+    <title>The Haukai Restaurant Staff Page</title>     
   </head>
   <body>
-    <p>Only people who know the password should be able to see this page.</p>
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <header class="w3-container w3-theme-d5">
+      <h1>The Haukai Restaurant</h1>
+    </header>
+    <nav class="w3-bar w3-theme-d5 w3-padding-16 ">
+      <a href="/index.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Home </a>
+      <a href="/menus.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Menus</a>
+      <a href="/booking.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Bookings</a>
+      <a href="/giftvoucher.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Gift Vouchers</a>
+      <a href="/aboutus.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >About Us</a>
+      <a href="/contact.html" class="w3-bar-item w3-button w3-hover-light-green w3-round-large w3-hide-small" >Contact</a>
+      <a href="private.html" class="w3-bar-item w3-button w3-light-grey w3-hover-light-green w3-round-large w3-hide-small">Staff Page</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </nav>
+    <nav id="demo" class="w3-bar-block w3-theme-d5 w3-hide w3-hide-large w3-hide-medium ">
+      <a href="/index.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Home</a>   
+      <a href="/menus.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Menus</a>
+      <a href="/booking.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Bookings</a>
+      <a href="/giftvoucher.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Gift Vouchers</a>
+      <a href="/aboutus.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">About Us</a>
+      <a href="/contact.html" class="w3-bar-item w3-button w3-hover-light-green w3-padding-16">Contact</a>
+      <a href="private.html" class="w3-bar-item w3-button w3-light-grey  w3-hover-light-green w3-padding-16">Staff Page</a>
+      
+    </nav>
+    <script>
+  function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+    <!-- Here is our page's main content -->
+    <main>        
+      <div class="w3-row">  
+        <div class="w3-display-container w3-theme-d5 " >
+            <img src="/images/silverfern.jpg" alt="Authentic Māori Kai in the Bay of Islands" class="w3-image w3-opacity-min">                
+        </div>      
+         
+             
+      <div class="col-container">
+        <div class="w3-container w3-padding w3-theme col">
+           <h2>Staff Roster</h2>
+           <p>Please click the button to check the recent staff roster </p>
+           <a class="w3-button w3-block w3-theme-d5 w3-hover-light-green w3-round-large"  href="https://calendar.google.com/calendar/u/0?cid=ZTRkZWUzMGZjNzhlZDhiZTU0ODcyNDVjMTA3OTNhNjQzNWRjYzc5MDUwMGNiMzU5NzNmMzVhZGQ3OWFhMGY0OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"> Check our staff roster in two weeks</a>               
+        </div>   
+                
+        <div class="w3-container w3-padding w3-theme-l1 col">
+           <h2>Staff Contact</h2>
+           <li>xxxx   122334566</li>
+           <li>xxxxx  234565678</li>
+           <li>xxxx   122334566</li>
+           <li>xxxxx  234565678</li>
+        </div>
+      </div>
+       
+      </div>
+    </main>
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer class="w3-container w3-theme-d5">
+      <p>&copy; Copyright 2023 by The Haukai Restaurant.</p>
+    </footer>
   </body>
 </html>
